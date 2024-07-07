@@ -1,0 +1,71 @@
+*
+{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    font-size: 18px;
+}
+
+@font-face {
+    font-family: "timer";
+    src: url("../font/ds_digital/DS-DIGIB.TTF") format("truetype");
+}
+
+body
+{
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(235, 240, 250);
+}
+
+main
+{
+    display: flex;
+    flex-flow: column nowrap;
+    width: 90%;
+    padding: 2rem;
+    justify-content: center;
+    align-items: center;
+    outline: 1px solid rgba(28, 28, 28, 0.15);
+    border-radius: 20px;
+    box-shadow: inset 1px 5px 30px rgba(28, 28, 28, 0.2);
+}
+
+section
+{
+    font-family: "timer";
+    font-size: 2.9rem;
+    margin: 0.5rem;
+}
+
+@media (min-width: 700px)
+{
+    main
+    {
+        width: 60%;
+        padding: 4rem;
+    }
+
+    section
+    {
+        font-size: 4rem;
+    }
+}
+
+@media (min-width: 900px)
+{
+    main
+    {
+        width: 40%;
+    }
+
+    section
+    {
+        font-size: 4rem;
+    }
+}
